@@ -1,0 +1,43 @@
+.large-hero {
+    position: relative;
+    
+    &__text-content {
+        position: absolute;
+        top:20%;
+        transform: translateY(-30%);
+        left:0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    &__title {
+        max-width: 53.125rem;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 3.125rem;
+        line-height: 3.44rem;
+        color: $mainWhite; 
+    }
+    &__hr {
+        margin-top: 2.25rem;
+        margin-bottom: 2.25rem;
+        color: $mainOrange;
+        max-width: 3.125rem;
+        border: 2px solid $mainOrange;
+    }
+    &__description {
+        max-width: 50rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.25rem;
+        font-family: Merriweather;
+        font-weight: 300;
+        font-size: 1.125rem;
+        line-height: 1.6875rem;
+        color: rgba(255,255,255,0.7);
+    }
+}
+
+
+
+

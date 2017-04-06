@@ -1,0 +1,14 @@
+.btn {
+    background-color: $mainOrange;
+    color: $mainWhite;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.9375rem 1.875rem;
+    display: inline-block;
+    border-radius: 18.75rem;
+    text-transform: uppercase;
+    
+    &--margin-top {
+        margin-top: 3.125rem;
+    }
+}
