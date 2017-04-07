@@ -1,0 +1,23 @@
+.headline {
+    max-width: 26.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.875rem;
+    font-weight: bold;
+    line-height: 2.0625rem;
+    color: $mainWhite; 
+    @mixin atSmall {
+        max-width: 53.125rem;
+        font-size: 3.125rem;
+        line-height: 3.44rem;
+    }
+    &--sub {
+        font-size: 1.875rem;
+        font-weight: 500;
+        line-height: 2.0625rem;
+    }
+    
+    &--black {
+        color:$mainBlack;
+    }
+}

@@ -1,0 +1,29 @@
+.description {
+    max-width: 26.875rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: Merriweather;
+    font-weight: normal;
+    font-size: 1.0rem;
+    line-height: 1.5rem;
+    color: rgba(255,255,255,0.7);
+
+    @mixin atSmall {
+        font-size: 1.125rem;
+        line-height: 1.6875rem;
+        max-width: 50rem;
+        margin-bottom: 1.25rem;
+    }
+    
+    &--sub {
+        font-size: 1.0rem;
+        line-height: 1.5rem;
+    }
+    &--grey {
+        color: #777777;
+    }
+    &--black {
+        color: $mainBlack;
+    }
+}

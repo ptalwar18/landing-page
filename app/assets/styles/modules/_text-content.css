@@ -1,0 +1,10 @@
+.text-content {
+    width: 100%;
+    text-align: center;
+    &--margin-l {
+        margin-left: 80px;
+    }
+    &--margin-r {
+        margin-left: -80px;
+    }
+}

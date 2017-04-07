@@ -1,5 +1,7 @@
 .btn {
     background-color: $mainOrange;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
     color: $mainWhite;
     text-decoration: none;
     font-weight: bold;
@@ -10,5 +12,10 @@
     
     &--margin-top {
         margin-top: 3.125rem;
+    }
+    
+    &--white {
+        background-color: $mainWhite;
+        color: black;
     }
 }
