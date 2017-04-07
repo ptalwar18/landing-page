@@ -570,7 +570,7 @@ img {
     color: #ffffff;
 }
 
-@media (min-width: 530px) {
+@media (min-width: 1200px) {
 
   .headline {
     max-width: 53.125rem;
@@ -625,13 +625,17 @@ img {
 }
 
 .hrule {
-    margin-top: 2.25rem;
-    margin-bottom: 2.25rem;
-    max-width: 3.125rem;
-    border: 2px solid #F05F40;
+    width: 100%;
 }
 
-.hrule--white {
+.hrule__small {
+  margin-top: 2.25rem;
+  margin-bottom: 2.25rem;
+  max-width: 3.125rem;
+  border: 2px solid #F05F40;
+}
+
+.hrule__small--white {
   border: 2px solid #ffffff;
 }
 
@@ -695,4 +699,55 @@ img {
   line-height: 2.625rem;
 }
 
+.site-header {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
 
+.site-header__headline {
+  margin-left: 10px;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  color: rgba(255,255,255,0.7);
+}
+
+.site-header nav {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.primary-nav--pull-right {
+  float:right;
+}
+
+.primary-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.primary-nav ul::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.primary-nav li {
+  list-style: none;
+  float:left;
+  padding-right: 20px;
+}
+
+.primary-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  font-weight: bold;
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+  color: rgba(255,255,255,0.7);
+}
+
+ 

@@ -6,10 +6,10 @@
     font-weight: bold;
     line-height: 2.0625rem;
     color: $mainWhite; 
-    @mixin atSmall {
+    @mixin atLarge {
         max-width: 53.125rem;
         font-size: 3.125rem;
-        line-height: 3.44rem;
+        line-height: 3.44rem; 
     }
     &--sub {
         font-size: 1.875rem;
