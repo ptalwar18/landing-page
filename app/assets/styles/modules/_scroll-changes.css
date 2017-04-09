@@ -1,0 +1,14 @@
+.scroll-changes {
+    transition: all .8s ease-out;
+    &--is-visible {
+        @mixin atMedium {
+            background-color: $mainWhite;
+            h2 {
+                color:$mainOrange;
+            }
+            li a {
+                color:$mainBlack;
+            }  
+        }  
+    }
+}

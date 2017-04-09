@@ -48,6 +48,21 @@
         text-transform: uppercase;
         @mixin atMedium {
             color:$mainGrey; 
+            &.is-current-link {
+                color: $mainOrange;
+                &:hover{
+                    color:$mainOrange;
+                }
+            }
+        }
+        &:hover {
+            color: $mainOrange;
+            @mixin atMedium {
+                color: $mainWhite;
+                &:not(.is-current-link){
+                    color: $mainOrange;
+                }
+            }
         }
     }
 }

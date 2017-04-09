@@ -1,5 +1,8 @@
 .page-section {
     padding: 4.5rem 0;
+    &.large-hero {
+        padding: 0 0;
+    }
     &--orange {
         background-color: $mainOrange;
         color: $mainWhite;

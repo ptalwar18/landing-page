@@ -12,28 +12,29 @@
     <link rel="stylesheet" href="temp/styles/styles.css">
 </head>
 <body>
-    <header class="site-header site-header--white">
-            <h2 class="site-header__headline site-header__headline--orange">START BOOTSTRAP</h2>
+    <header class="scroll-changes site-header site-header--white">
+            <h2 class="scroll-changes site-header__headline site-header__headline--orange">START BOOTSTRAP</h2>
             <div class="site-header__menu-icon">
                 <div class="site-header__menu-icon__top"></div>
                 <div class="site-header__menu-icon__middle"></div>
                 <div class="site-header__menu-icon__bottom"></div>
-            </div>
-            <div class="site-header__menu-content">
+            </div> 
+        <div class="scroll-changes site-header__menu-content">
                 <nav class="primary-nav primary-nav--pull-right">
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
+                    <ul> 
+                        <li><a href="#about" id="about-link">About</a></li>
+                        <li><a href="#services" id="services-link">Services</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#contact" id="contact-link">Contact</a></li>
                     </ul>
                 </nav>
-            </div>
                 <hr class="hrule hrule--absolute-p hrule--invisible-at-smallest">
+            </div> 
+                
             
            
     </header>
-    <div class="large-hero">
+    <div class="page-section large-hero">
         <img src="assets/images/header-large.jpg" alt="Computer and Cellphone on a table" class="large-hero__image">
             <div class="large-hero__text-content">
                 <div class="wrapper">
@@ -44,7 +45,7 @@
                 </div>
         </div>
     </div>
-    <div id="about" class="page-section page-section--orange">
+    <div id="about" class="page-section page-section--orange" data-matching-link="#about-link">
        <div class="wrapper wrapper--small">
           <div class="text-content">
               <h1 class="headline--sub">We've got what you need!</h1>
@@ -54,7 +55,7 @@
           </div>
        </div>
     </div>
-    <div id="services" class="page-section">
+    <div id="services" class="page-section" data-matching-link="#services-link">
        <div class="wrapper wrapper--large">
           <div class="text-content">
               <h1 class="headline--sub">At Your Service</h1>
@@ -67,7 +68,7 @@
                       <h2 class="headline headline--black headline--sub">Sturdy Templates</h2>
                       <p class="description description--sub description--grey">Our templates are updated regularly so they don't break.</p>
                   </div>
-                </div>
+                </div> 
                <div class="row__large-3">
                   <div class="text-content">
                       <i class="reveal fa fa-paper-plane icon" aria-hidden="true"></i>
@@ -75,10 +76,10 @@
                       <p class="description description--sub description--grey">You can use this theme as is, or you can make changes!</p>   
                   </div>
                    
-               </div>
+               </div> 
                <div class="row__large-3">
                    <div class="text-content">
-                       <i class="reveal fa fa-newspaper-o icon" aria-hidden="true"></i>
+                       <i class="reveal fa fa-newspaper-o icon" aria-hidden="true"></i> 
                        <h2 class="headline headline--black headline--sub">Up to Date</h2>
                        <p class="description description--sub description--grey">We update dependencies to keep things fresh.</p>
                    </div>
@@ -101,7 +102,7 @@
               </div>
            </div>
         </div>
-        <div id="contact" class="page-section">
+    <div id="contact" class="page-section" data-matching-link="#contact-link">
             <div class="wrapper">
                <div class="text-content">
                    <h1 class="headline headline--sub headline--black">Let's Get In Touch!</h1>

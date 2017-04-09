@@ -1,11 +1,12 @@
 .site-header {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 50px;
     transition: height .8s ease-out;
     z-index: 1;  
     @mixin atMedium {
-        height: 80px;
+        position: fixed; 
+        height: 44px;
     }
     &--white {
         background-color:$mainWhite;
@@ -13,9 +14,14 @@
             background-color: transparent;
         }
     }
+   
     &--is-expanded {
         height: 220px;
         background-color: rgba($mainWhite,1.0);
+        @mixin atMedium {
+            height: 44px;
+            background-color: transparent;
+        }
     }
     &__menu-content {
         opacity: 0;

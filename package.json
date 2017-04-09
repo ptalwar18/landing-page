@@ -4,6 +4,7 @@
   "dependencies": {
     "end-of-stream": "^1.4.0",
     "jquery": "^3.2.1",
+    "jquery-smooth-scroll": "^2.1.2",
     "normalize.css": "^6.0.0",
     "once": "^1.4.0",
     "orchestrator": "^0.3.8",
