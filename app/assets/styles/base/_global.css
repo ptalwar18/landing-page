@@ -1,6 +1,7 @@
 body {
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif; 
     color: #333;
+/*    background-color: $mainWhite;*/
 }
 
 img {
@@ -11,3 +12,4 @@ img {
 * {
     box-sizing: border-box;
 }
+

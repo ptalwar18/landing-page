@@ -1,10 +1,22 @@
 .hrule {
     width: 100%;
+    &--absolute-p {
+        position: absolute;
+        top:50%;
+    }
+    &--invisible-at-smallest {
+        display:none;
+        @mixin atMedium {
+            display: block;
+        }
+    }
     &__small {
         margin-top: 2.25rem;
         margin-bottom: 2.25rem;
         max-width: 3.125rem;
-        border: 2px solid $mainOrange;
+        border-width: 2px;
+        border-style: solid;
+        border-color: $mainOrange;
         
         &--white {
             border: 2px solid $mainWhite;

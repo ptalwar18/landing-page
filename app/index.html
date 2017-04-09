@@ -12,20 +12,29 @@
     <link rel="stylesheet" href="temp/styles/styles.css">
 </head>
 <body>
-    <header class="site-header">
-            <h2 class="site-header__headline">START BOOTSTRAP</h2>
-           <nav class="primary-nav primary-nav--pull-right">
-               <ul>
-                   <li><a href="#about">About</a></li>
-                   <li><a href="#services">Services</a></li>
-                   <li><a href="#portfolio">Portfolio</a></li>
-                   <li><a href="#contact">Contact</a></li>
-               </ul>
-           </nav>
-           <hr class="hrule">
+    <header class="site-header site-header--white">
+            <h2 class="site-header__headline site-header__headline--orange">START BOOTSTRAP</h2>
+            <div class="site-header__menu-icon">
+                <div class="site-header__menu-icon__top"></div>
+                <div class="site-header__menu-icon__middle"></div>
+                <div class="site-header__menu-icon__bottom"></div>
+            </div>
+            <div class="site-header__menu-content">
+                <nav class="primary-nav primary-nav--pull-right">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+                <hr class="hrule hrule--absolute-p hrule--invisible-at-smallest">
+            
+           
     </header>
     <div class="large-hero">
-           <img src="assets/images/header-large.jpg" alt="Computer and Cellphone on a table" class="large-hero__image">
+        <img src="assets/images/header-large.jpg" alt="Computer and Cellphone on a table" class="large-hero__image">
             <div class="large-hero__text-content">
                 <div class="wrapper">
                     <h1 class="headline">YOUR FAVORITE SOURCE OF FREE BOOTSTRAP THEMES</h1>
@@ -88,7 +97,7 @@
            <div class="wrapper">
               <div class="text-content">
                   <h1 class="headline headline--sub">Free Download at Start Bootstrap!</h1>
-                  <a href="#" class="btn">DOWNLOAD NOW!</a>   
+                  <a href="#" class="btn btn--white">DOWNLOAD NOW!</a>   
               </div>
            </div>
         </div>
@@ -116,5 +125,6 @@
                     </div>
                 </div>
             </div>
+            <script src="temp/scripts/App.js"></script>
 </body>
 </html>

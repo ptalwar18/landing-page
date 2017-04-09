@@ -1,16 +1,113 @@
 .site-header {
     position: absolute;
     width: 100%;
-    z-index: 2;
+    height: 50px;
+    transition: height .8s ease-out;
+    z-index: 1;  
+    @mixin atMedium {
+        height: 80px;
+    }
+    &--white {
+        background-color:$mainWhite;
+        @mixin atMedium {
+            background-color: transparent;
+        }
+    }
+    &--is-expanded {
+        height: 220px;
+        background-color: rgba($mainWhite,1.0);
+    }
+    &__menu-content {
+        opacity: 0;
+/*        transform: scale(1.2);*/
+        transition: all .3s ease-out;
+        position: relative;
+        z-index: -10;
+        padding-top: 180px;
+        text-align: left;
+        @mixin atMedium {
+/*            transform: scale(1);*/
+            opacity: 1;
+            z-index: 2;
+            padding-top: 0px;
+            
+        }
+        &--is-visible {
+            opacity: 1;
+            z-index: 1;
+            margin-bottom: 0;
+/*            transform: scale(1);   */
+        }
+    }
+    
+    &__menu-icon {
+        position: absolute;
+        content: "MENU";
+        width:20px;
+        height: 19px;
+        z-index: 10;
+/*        background-color: blue;*/
+        top:15px;
+        right:10px;
+        
+        @mixin atMedium {
+            display: none;
+        }
+        &:before {
+            font-size: 14px;
+            margin-left: -43px;
+            content: "MENU";
+            
+            
+        }
+        &__top{
+            position: absolute;
+            top:0;
+            left:0;
+            width:20px;
+            height: 3px;
+            background-color: $mainBlack;
+        }
+        &__middle {
+            position: absolute;
+            top:8px;
+            left:0;
+            width:20px;
+            height: 3px;
+            background-color: $mainBlack;
+        }
+        &__bottom {
+            position: absolute;
+            top:16px;
+            left:0;
+            width:20px;
+            height: 3px;
+            background-color: $mainBlack;
+        }
+    }
     &__headline {
         margin-left: 10px;
-        margin-bottom: 0;
+        margin-bottom: 15px;
         font-weight: bold;
         font-size: 1.125rem;
         line-height: 1.25rem;
-        color: $mainGrey;
+        color: $mainBlack;
+        @mixin atMedium {
+            color: $mainGrey;
+            margin-bottom: 0;
+        }
+        &--orange {
+            color: $mainOrange;
+            @mixin atMedium {
+                color: $mainGrey;
+            }
+        }
     }
     nav {
-        transform: translateY(-100%);
+        @mixin atMedium {
+            transform: translateY(-100%);
+        }
+        
     }
+
 }
